@@ -25,3 +25,38 @@ main {
   align-items: center;
   margin-top: 20px;
 }
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  gap: 25px;
+}
+
+.panel button {
+  background-image: linear-gradient(
+    to right,
+    rgb(182, 244, 146),
+    rgb(51, 139, 147)
+  );
+  border: 4px groove #5df1d2;
+  border-radius: 0 100%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.panel button:active {
+  background-image: linear-gradient(
+    248.2deg,
+    rgba(242, 13, 13, 0.74) 30.4%,
+    rgba(249, 244, 53, 1) 91.1%
+  );
+  border: 4px groove #f1a05d;
+}
+
+label {
+  text-align: center;
+  font-size: 25px;
+  color: greenyellow;
+}
