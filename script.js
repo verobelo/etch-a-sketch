@@ -3,6 +3,7 @@ const btnGreen = document.getElementById("green");
 const btnRainbow = document.getElementById("rainbow");
 const gridInput = document.getElementById("grid-input");
 const selectedInput = document.getElementById("selected-input");
+const reloadBtn = document.getElementById("reload");
 
 gridInput.addEventListener("input", () => {
   selectedInput.textContent = gridInput.value;
@@ -49,3 +50,5 @@ function createGrid() {
 }
 
 createGrid();
+
+reloadBtn.addEventListener("click", () => document.location.reload());
